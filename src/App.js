@@ -19,7 +19,7 @@ class App extends Component {
     data.forEach((data, index) => {
       if (data.includes("-")) {
         var range = data.split("-");
-        for (var i = range[0]; i <= range[1]; i++) {
+        for (var i = Number(range[0]); i <= Number(range[1]); i++) {
           rengeList.push(i);
         }
       } else {
